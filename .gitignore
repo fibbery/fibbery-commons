@@ -1,0 +1,10 @@
+*~
+.DS_Store
+.Ulysses-Group.plist
+MarkDownNote.marked
+.UlyssesRoot
+.idea/
+*.iml
+target/
+bin/
+.classpath
