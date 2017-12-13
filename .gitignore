@@ -8,3 +8,5 @@ MarkDownNote.marked
 target/
 bin/
 .classpath
+.settings
+.project
