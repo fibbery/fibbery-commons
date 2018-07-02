@@ -1,23 +1,24 @@
 package com.fibbery.commons.algorithm.hash;
 
 import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 /**
- * Created by jiangnenghua on 17/11/7.   desc :
+ * @author fibbery
+ * @date 18/6/21
  */
-public enum  HashAlgorithm {
-    // hash一致性算法
+public enum HashAlgorithm {
+    NATIVE_HASH,
+    CRC_HASH,
     KETAMA_HASH;
 
-    public byte[] md5(String key) {
-        MessageDigest md5 = null;
+    private static MessageDigest md5Digest = null;
+
+    static {
         try {
-            md5 = MessageDigest.getInstance("MD5");
-            md5.update(key.getBytes("UTF-8"));
-        } catch (Exception e) {
+            md5Digest = MessageDigest.getInstance("md5");
+        } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
-        return null;
     }
-
 }
