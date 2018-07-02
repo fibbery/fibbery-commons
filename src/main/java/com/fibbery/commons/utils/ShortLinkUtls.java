@@ -35,7 +35,8 @@ public class ShortLinkUtls {
      * @return
      */
     public static String[] getShortLink(String link) {
-        String text = MD5Utils.md5(link + "fibbery"); //盐值混合
+        /*盐值混合*/
+        String text = Md5Utils.md5(link + "fibbery");
         int group = text.length() / 8;
         String result[] = new String[group];
         for(int i = 0; i < group; i++) {

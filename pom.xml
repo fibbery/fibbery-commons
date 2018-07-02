@@ -12,6 +12,7 @@
         <commons-lang3.version>3.5</commons-lang3.version>
         <junit.version>4.12</junit.version>
         <contiperf.version>2.1.0</contiperf.version>
+        <lombok.version>1.16.10</lombok.version>
     </properties>
 
     <dependencies>
@@ -19,6 +20,16 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>${commons-lang3.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>log4j-over-slf4j</artifactId>
+            <version>1.7.25</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
